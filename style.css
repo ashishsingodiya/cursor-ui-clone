@@ -12,7 +12,8 @@
     --color-theme-card-hover-light-hex: #1d1b15;
     --color-theme-product-chrome: var(--color-theme-bg);
     --color-theme-product-editor: var(--color-theme-card-hex);
-    --color-theme-product-text: #26251eeb
+    --color-theme-product-text: #26251eeb;
+    --color-theme-border-02: color-mix(in oklab,var(--color-theme-fg)10%,transparent)
 }
 
 @font-face {
@@ -29,13 +30,13 @@
 }
 
 html {
-  -webkit-font-smoothing: antialiased;
+    -webkit-font-smoothing: antialiased;
 }
 
 
 body {
     background-color: #808080;
-    /* background-color: var(--color-theme-bg); */
+    background-color: var(--color-theme-bg);
     min-height: 120vh;
     font-family: 'CursorGothic', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
@@ -46,7 +47,7 @@ a {
 
 }
 
-header {
+.header {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -55,6 +56,8 @@ header {
     font-size: 14px;
     font-weight: 400;
     padding: 0px 20px;
+    position: sticky;
+    top: 0;
 }
 
 .logo {
@@ -85,10 +88,11 @@ header {
     /* letter-spacing: 0.005em; */
 }
 
-.nav-btn{
+.nav-btn {
     padding: 5.6px 16px;
 }
-.nav-btn-1{
+
+.nav-btn-1 {
     padding-left: 83px;
 }
 
@@ -111,4 +115,74 @@ header {
     border-radius: 25px;
     padding: 4px 10px;
     padding: 3.1px 10.5px 3px;
+}
+
+
+.main-sections {
+    max-width: 1300px;
+    margin: auto;
+    padding: 0px 20px;
+}
+
+.section-1 {
+    padding: 112px 20px 67.2px;
+}
+
+.hero-section {
+    width: 658px;
+    margin-bottom: 56px;
+}
+
+.hero-section h1 {
+    font-size: 26px;
+    font-size: 1.625rem;
+    text-align: left;
+    text-wrap: balance;
+    color: var(--color-theme-fg);
+    margin-bottom: 22.4px;
+}
+
+.cta-btn {
+    background-color: var(--color-theme-fg);
+    color: var(--color-theme-bg);
+    padding: 12.48px 21.6px;
+    border-radius: 50px;
+    display: inline-block;
+}
+
+.bg-1{
+    background-image: url(assets/images/bg-1.webp);
+    background-position: center;
+    background-size: cover;
+    height: 680px;
+    border-radius: 5px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0.9;
+}
+
+.editor {
+    position: absolute;
+}
+
+.editor img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.editor-main {
+  width: 1025px;
+  box-shadow: 0 28px 70px rgba(0, 0, 0, 0.14), 0 14px 32px rgba(0, 0, 0, 0.1), 0 0 0 1px var(--color-theme-border-02);
+  /* I have copied these values from cursor website with help of dev tools */
+}
+
+.editor-float {
+  width: 420px;
+  position: absolute;
+  right: 63px;
+  bottom: 48px;
 }
