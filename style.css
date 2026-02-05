@@ -481,6 +481,9 @@ a {
     padding-bottom: 67.2px;
 }
 
+.frontier-section {
+    margin: 44.8px 0px;
+}
 
 .frontier-section-heading h2 {
     font-size: 26px;
@@ -585,4 +588,66 @@ a {
     max-width: 100%;
     max-height: 100%;
     object-fit: cover;
+}
+
+
+
+
+.section-6 {
+    padding-top: 67.2px;
+    padding-bottom: 67.2px;
+}
+
+.changelog-section-heading h2 {
+    font-size: 26px;
+    text-align: left;
+    color: var(--color-theme-fg);
+    margin-bottom: 22.4px;
+    font-weight: normal;
+}
+
+.changelog-card {
+    background-color: var(--color-theme-card-hex);
+    padding: 15.9px 17.5px 20px;
+    display: flex;
+    flex-direction: column;
+    border: solid 1px var(--color-theme-border-01);
+    border-radius: 4px;
+}
+
+.changelog-info {
+    color: oklab(0.943853 0.00107113 0.000336707 / 0.6);
+    display: flex;
+    align-items: center;
+    gap: 12.8px;
+    position: relative;
+    left: -1px;
+}
+
+.changelog-version {
+    border: solid 1px;
+    padding: 3.920px 9.1px 4.060px;
+    border-radius: 60px;
+    font-size: 14px;
+    font-weight: normal;
+    line-height: 14px;
+}
+
+.changelog-message{
+    color: var(--color-theme-fg);
+    margin-top: 13.067px;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.changelog-cards {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+
+.changelog-cta div {
+    color: var(--color-theme-accent);
+    font-size: 16px;
+    margin-top: 22.4px;
 }
