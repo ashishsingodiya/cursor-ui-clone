@@ -887,6 +887,10 @@ a {
     color: oklab(0.943853 0.00107113 0.000336707 / 0.6);
 }
 
+.attribution {
+    color: oklab(0.943853 0.00107113 0.000336707 / 0.6);
+}
+
 .footer-info-right {
     display: flex;
     align-items: center;
@@ -924,8 +928,4 @@ a {
     gap: 5px;
     padding: 5.6px 10.5px;
 
-}
-
-.lang-options span {
-    /* padding: 5.6px 10.5px; */
 }
