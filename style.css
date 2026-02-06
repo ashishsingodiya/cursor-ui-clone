@@ -883,6 +883,10 @@ a {
     gap: 15px;
 }
 
+.footer-info-left a {
+    color: oklab(0.943853 0.00107113 0.000336707 / 0.6);
+}
+
 .footer-info-right {
     display: flex;
     align-items: center;
