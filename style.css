@@ -146,6 +146,10 @@ a {
     line-height: 32.5px;
     color: var(--color-theme-fg);
     margin-bottom: 22.4px;
+    letter-spacing: -0.325px;
+    line-height: 32.5px;
+    text-align: left;
+    text-wrap-mode: wrap;
 }
 
 .cta-btn {
@@ -154,6 +158,18 @@ a {
     padding: 12.48px 21.6px;
     border-radius: 50px;
     display: inline-block;
+    font-size: 16px;
+    font-weight: normal;
+    line-height: 16px;
+    box-sizing: border-box;
+    border: 1px solid var(--color-theme-fg);
+    margin-bottom: 7.5px;
+
+}
+
+.cta-btn span {
+    font-feature-settings: "ss08";
+    padding-left: 0.4px;
 }
 
 .bg-1 {
@@ -161,7 +177,7 @@ a {
     background-position: center;
     background-size: cover;
     height: 680px;
-    border-radius: 5px;
+    border-radius: 4px;
     position: relative;
     display: flex;
     justify-content: center;
@@ -169,32 +185,17 @@ a {
     opacity: 0.9;
 }
 
-/* .editor {
-    position: absolute;
-} */
-
 .editor img {
     display: block;
     width: 100%;
     height: auto;
-    border-radius: 12px;
+    border-radius: 10px;
     box-shadow: 0 28px 70px rgba(0, 0, 0, 0.14), 0 14px 32px rgba(0, 0, 0, 0.1), 0 0 0 1px var(--color-theme-border-02);
 }
 
 .editor-main img {
-    width: 1025px;
-    /* I have copied these values from cursor website with help of dev tools */
-}
-
-.editor-float img {
-    width: 420px;
-}
-
-.editor-float {
-    width: 420px;
-    position: absolute;
-    right: 63px;
-    bottom: 48px;
+    width: 1040px;
+    /* transform: translateY(15px); */
 }
 
 .section-2 {
@@ -209,6 +210,11 @@ a {
 
 .section-2 p {
     margin-bottom: 22.4px;
+    font-size: 14px;
+    font-weight: normal;
+    letter-spacing: 0.14px;
+    line-height: 21px;
+    text-align: center;
 }
 
 .brand-cards {
@@ -240,6 +246,9 @@ a {
 .section-3 {
     padding-top: 67.2px;
     padding-bottom: 67.2px;
+    font-weight: normal;
+    letter-spacing: -0.11px;
+    line-height: 28.6px;
 }
 
 .section-3-1 {
@@ -251,20 +260,21 @@ a {
     background-color: var(--color-theme-card-hex);
     border: solid 1px var(--color-theme-border-01);
     border-radius: 4px;
-    height: 650px;
+    height: 680px;
     display: grid;
     grid-template-columns: 0.5fr 1fr;
+    gap: 10px;
 }
 
 .sec-3-1-left {
     display: flex;
     align-items: center;
+    padding-right: 30px;
 }
 
 .sec-3-1-content h3 {
     color: var(--color-theme-fg);
     font-size: 22px;
-    font-weight: normal;
 }
 
 .sec-3-1-content p {
@@ -279,19 +289,17 @@ a {
 }
 
 .sec-3-1-right {
-    background-image: url(assets/images/bg-2.webp);
-    background-position: center;
-    background-size: cover;
+    background-color: #49433a;
     border-radius: 4px;
     display: flex;
     justify-content: center;
     align-items: center;
-    opacity: 0.9;
-
+    overflow: hidden;
 }
 
 .editor-3-1 img {
-    width: 680px;
+    height: 600px;
+    transform: translate(24px);
 }
 
 .section-3-2 {
@@ -306,6 +314,7 @@ a {
     height: 650px;
     display: grid;
     grid-template-columns: 1fr 0.5fr;
+    gap: 10px;
 }
 
 .sec-3-2-right {
@@ -315,6 +324,7 @@ a {
 
 .sec-3-2-content {
     padding-left: 30px;
+    padding-right: 2.5px;
 }
 
 .sec-3-2-content h3 {
@@ -335,8 +345,9 @@ a {
 }
 
 .sec-3-2-left {
-    background-image: var(--color-theme-card-03);
-    background-color: #333d3f;
+    background-image: url(assets/images/internal-brand-023.webp);
+    background-position: center;
+    background-size: cover;
     border-radius: 4px;
     display: flex;
     justify-content: center;
@@ -361,6 +372,7 @@ a {
     height: 650px;
     display: grid;
     grid-template-columns: 0.5fr 1fr;
+    gap: 10px;
 }
 
 .sec-3-3-left {
@@ -369,7 +381,7 @@ a {
 }
 
 .sec-3-3-content {
-    padding: 0px 30px 0px 2.5px;
+    padding: 0px 44px 0px 2.5px;
 }
 
 .sec-3-3-content h3 {
@@ -395,22 +407,20 @@ a {
     background-size: cover;
     position: relative;
     border-radius: 4px;
-    opacity: 0.9;
-
 }
 
 .editor-3-31 {
-    width: 625px;
+    width: 540px;
     position: absolute;
-    top: 27px;
-    left: 60px;
+    top: 30px;
+    left: 80px;
 }
 
 .editor-3-32 {
-    width: 625px;
+    width: 540px;
     position: absolute;
-    right: 50px;
-    bottom: 50px;
+    right: 65px;
+    bottom: 32px;
     z-index: 3;
 }
 
@@ -420,10 +430,11 @@ a {
 }
 
 .testimonials-heading h2 {
-    font-size: 32px;
+    font-size: 36px;
     text-align: center;
     color: var(--color-theme-fg);
     padding-bottom: 56px;
+    letter-spacing:-0.72px;
     font-weight: normal;
 }
 
@@ -439,15 +450,22 @@ a {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    min-height: 245px;
+    min-height: 205px;
     border: solid 1px var(--color-theme-border-01);
     border-radius: 4px;
 }
 
 .quote-container {
     color: var(--color-theme-fg);
+    font-size: 16px;
+    font-weight: normal;
     line-height: 24px;
+    letter-spacing: 0.08px;
 }
+/* 
+..quote-container p {
+
+} */
 
 .author-image {
     display: flex;
@@ -461,8 +479,11 @@ a {
 }
 
 .author-details h2 {
-    font-size: 14px;
     color: var(--color-theme-fg);
+    font-size: 14px;
+    font-weight: normal;
+    letter-spacing: 0.14px;
+    line-height: 21px;
 }
 
 .author-details p {
@@ -489,9 +510,10 @@ a {
     font-size: 26px;
     text-align: left;
     color: var(--color-theme-fg);
-    /* padding-bottom: 56px; */
     margin-bottom: 22.4px;
     font-weight: normal;
+    letter-spacing: -0.325px;
+    line-height: 32.5px;
 }
 
 
@@ -510,7 +532,6 @@ a {
     border: solid 1px var(--color-theme-border-01);
     border-radius: 4px;
     height: 520px;
-    /* width: 391px; */
 }
 
 .frontier-card-header h3 {
@@ -539,11 +560,11 @@ a {
 }
 
 .frontier-card-1-body {
-    background-color: #433e35;
+    background-color: #26241e;
     height: 100%;
     margin-top: 16.4px;
     border-radius: 4px;
-    padding: 35px;
+    padding: 35px 20px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -554,7 +575,7 @@ a {
     max-height: 100%;
     object-fit: contain;
     border-radius: 10px;
-    border: solid 1px var(--color-theme-border-02);
+    transform: translateY(-20px);
 }
 
 .frontier-card-2-body {
@@ -702,7 +723,7 @@ a {
 .section-8 {
     background-color: var(--color-theme-card-hex);
     margin-top: 67.2px;
-    padding: 67.2px 20px;
+    padding: 89.6px 20px;
 }
 
 .section-8-container {
