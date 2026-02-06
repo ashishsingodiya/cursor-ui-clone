@@ -820,6 +820,11 @@ a {
     border-radius: 150px;
 }
 
+.cta-btn-2 span {
+    font-feature-settings: "ss08";
+    padding-left: 0.4px;
+}
+
 .footer-container {
     padding: 67.2px 20px 30px 20px;
     background-color: var(--color-theme-card-hex);
