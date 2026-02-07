@@ -903,6 +903,7 @@ a {
     font-size: 14px;
     border-radius: 100px;
     display: flex;
+    align-items: center;
     padding: 2px;
 }
 
@@ -927,5 +928,4 @@ a {
     display: flex;
     gap: 5px;
     padding: 5.6px 10.5px;
-
 }
